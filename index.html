@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto Bootstrap</title>
+</head>
+<body>
+    <!-- carousel -->
+
+    <div class="container">
+        <h2>Carousel</h2>
+        <div id="carousel-principal" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-principal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-principal" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-principal" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div data-bs-interval="2000" class="carousel-item active">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/04/23/11/11/flowers-7945521_960_720.jpg">
+                </div>
+                <div data-bs-interval="2000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/04/26/16/01/lighthouse-7952718_960_720.jpg">
+                </div>
+                <div data-bs-interval="2000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2022/04/16/10/56/tree-7136081_960_720.jpg">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-principal" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span>Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-principal" data-bs-slide="next">
+                <span >Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- layout com grid  com 3 linhas,2 linhas(tablet) e 1 linha(celular)-->
+    <div class="container">
+        <h2>Produtos exemplo</h2>
+        <div class="row g-3 div_produtos">
+            <div class="col-md-6 col-lg-4">
+            <img src="images/pc_1.webp" alt="" class="img-fluid ">
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <img src="images/pc2.webp" alt="" class="img-fluid ">
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <img src="images/pc3.jpg" alt="" class="img-fluid ">
+        </div>
+        </div>
+    </div>
+
+    <!-- criar card dentro das colunas -->
+    <div class="container custom-container">
+        <h2>Card</h2>
+        <div class="mainCard card text-bg-dark img-fluid">
+            <img src="images/loja.jpg" class="card-img-top" alt="img da loja">
+            <div class="card-img-overlay custom-overlay">
+                <h5 class="card-title">Aqui temos de TUDO</h5>
+                <p class="text-img card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Nihil ullam, corrupti dignissimos aspernatur similique nam illum facilis id quas, odio 
+                    obcaecati eaque soluta totam cupiditate?</p>
+                <p class="text-img card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Nihil ullam, corrupti dignissimos aspernatur similique nam illum facilis id quas, odio 
+                    obcaecati eaque soluta totam cupiditate?</p>
+                <p class="text-img card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Nihil ullam, corrupti dignissimos aspernatur similique nam illum facilis id quas, odio 
+                    obcaecati eaque soluta totam cupiditate?</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- publicar na vercel -->
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
